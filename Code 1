@@ -229,7 +229,7 @@ corrr = `
 `;
 
 
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "linear-gradient(135deg, #2c3190, #3a3ebb, #5662e0)";
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "linear-gradient(135deg, #2c3190, #3a3ebb, #5662e0)"; // Game window
 
 // Apply to elements
 document.getElementsByClassName("game_header")[0].style.backgroundImage = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
