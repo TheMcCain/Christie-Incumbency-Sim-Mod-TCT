@@ -219,19 +219,30 @@ jet_data = {
 
 //#startcode
 
+corrr = `
+  <h2 style="
+      background: linear-gradient(to bottom, #454DCA, #CE5555);
+      color: white;
+  ">
+    THE CHRISTIE TRAIL
+  </h2>
+`;
 
 
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#4b3bc4";
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "linear-gradient(135deg, #2c3190, #3a3ebb, #5662e0)";
 
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#3a3ebb";
+// Apply to elements
+document.getElementsByClassName("game_header")[0].style.backgroundImage = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+document.getElementsByClassName("game_header")[0].style.backgroundColor = "transparent"; // ensure gradient shows
 
-document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+$("#game_window")[0].style.backgroundImage = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+$("#game_window")[0].style.backgroundColor = "transparent"; // ensure gradient shows
 
-$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
-
-$(".container")[0].style.backgroundColor = "#b06363";
+$(".container")[0].style.backgroundImage = "linear-gradient(135deg, #903e3e, #b06363, #d28484)";
+$(".container")[0].style.backgroundColor = "transparent"; // ensure gradient shows
 
 document.getElementById("header").src = "https://jetsimon.com/public/placeholderbanner.png";
+
 
 document.body.background = "https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg";
 
